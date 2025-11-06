@@ -10,25 +10,41 @@
 </head>
 <body>
 <div id="header">
-    <div class="container">
-        <nav>
-            <img src="Image/Cedrick_LOGO.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">skills</a></li>
-                <li><a href="#PROJECT">Project</a></li>
-                <li><a href="#contact">Contract</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
+  <div class="container">
+    <nav>
+      <img src="Image/Cedrick_LOGO.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Skills</a></li>
+        <li><a href="#PROJECT">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    
+    <div class="header-content">
+      <div class="header-text">
         <p>UI/UX DESIGNER</p>
-        <H1> Greetings, <span> Explorers </span> <br> — welcome to the world of design and innovation.</H1>
-        </div>
+        <h2>Your work is your voice in the world.<br>Make sure it speaks truth.<br><span>— Anonymous</span></h>
+
+      </div>
+
+    
+      <div class="header-video">
+        <video autoplay muted loop playsinline controls>
+          <source src="Image/BABBYYYY.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
+  </div>
 </div>
+
+
+
+
 <!---------------------About ME!-------------------->>
 <div id="about">
     <div class="container">
@@ -78,6 +94,10 @@
         </div>
     </div>
 </div>
+
+
+
+
 <!--------Services--------->> 
 <div id="services">
     <div class="container">
@@ -105,10 +125,12 @@
     </div>
 </div>
 
+
+
 <!--------------------Project------------------------>>
 <div id="PROJECT" class="Project"> 
     <div class="container">
-        <h1 class="sub-title">My Project</h1>
+        <h1 class="sub-title">My Project</h1> 
         <div class="project-list">
             <div class="project1">
                 <img src="Image/OOP_DEFENSE.jpeg">
@@ -150,7 +172,7 @@
 
 
 
-
+<!-------------------Achievements------------------>>
 
 <div class="Achievements"> 
     <div class="container">
@@ -190,6 +212,7 @@
                 <div class="social-icons">
                     <a href="https://www.facebook.com/share/1CCQrW1FBN/"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.instagram.com/cedrickasusula?igsh=cjhsbzN0azI1MHpw"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="http://t.me/Asusula"><i class="fa-brands fa-telegram"></i></a>
                 </div>
                 <a href="Image/Asusula_Resume.pdf" download class="btn btn2">Download Resume</a>
 
@@ -212,7 +235,7 @@
     </div>
 </div>
 
-
+<!-----This script switches between tabs----------->>
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -229,8 +252,20 @@
     }
 </script>
 
+ <!--------For Menu(open and close)-------->>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
 
-    
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+    <!-------------------Message----------------->>
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzAt05MD3GihP7u6zIfumgnIOXL6FZ9GbchiNujALdYWTxk66iX65_aw-4bbcfw-NEdYw/exec'
   const form = document.forms['submit-to-google-sheet']
